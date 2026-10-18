@@ -193,4 +193,12 @@ Jika hanya ingin melihat video langsung di desktop Linux:
 | `compose.yaml` | Orkestrasi Docker container (host network) |
 | `.env.example` | Template konfigurasi kredensial |
 | `.env` | File kredensial aktif (diabaikan git) |
+| `LICENSE` | Lisensi open source (MIT) |
+
+---
+
+## Lisensi
+
+[MIT License](LICENSE)
+
 
