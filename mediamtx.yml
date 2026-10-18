@@ -1,0 +1,7 @@
+# MediaMTX configuration for V380 RTSP Bridge
+
+paths:
+  v380:
+    # Mengambil stream dari kamera via v380_stream.py dan publish ke RTSP
+    runOnInit: bash -c "sleep 1 && python3 v380_stream.py --output - | ffmpeg -hide_banner -loglevel warning -re -f hevc -r 16 -i - -c:v copy -f rtsp rtsp://localhost:$RTSP_PORT/$MTX_PATH"
+    runOnInitRestart: yes
