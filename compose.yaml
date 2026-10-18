@@ -10,6 +10,7 @@ services:
       - "8554:8554/udp"   # RTSP (UDP) - alternatif transport RTSP
       - "8889:8889"       # WebRTC (HTTP/WHEP) - playback langsung di browser
       - "8888:8888"       # HLS (HTTP) - playback via browser / Safari
+      - "8189:8189/udp"   # WebRTC ICE (UDP) - media transport browser
     env_file: .env
     volumes:
       - ./v380_stream.py:/app/v380_stream.py:ro
